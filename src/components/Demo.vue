@@ -1,4 +1,6 @@
 <template>
+  <div>
+    <i class="fa fa-camera-retro fa-lg"></i>
     <el-table
       :data="tableData"
       style="width: 100%"
@@ -18,6 +20,7 @@
         label="地址">
       </el-table-column>
     </el-table>
+  </div>
   </template>
   
   <style>
@@ -62,6 +65,9 @@
             address: '上海市普陀区金沙江路 1518 弄'
           }]
         }
+      },
+      created:function(){
+        console.log("Demo create success")
       }
     }
   </script>
