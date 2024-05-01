@@ -6,8 +6,13 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import 'font-awesome/css/font-awesome.min.css'
 import router from './router'
+import axios from 'axios'
+ 
 
 Vue.config.productionTip = false
+//将包挂载到vue的原型对象上
+Vue.prototype.$axios = axios
+axios.defaults.baseURL='http://localhost:8080'
 
 Vue.use(ElementUI);
 
