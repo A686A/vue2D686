@@ -5,6 +5,7 @@ import Mock from 'mockjs'
 //     timeout: 4000
 // })
 //使用mockjs模拟数据
+//RegExp('/product/search.*' 正则表达式匹配请求路径中的参数
 Mock.mock(RegExp('/product/search.*'), {
     "ret":0,
     "data":
