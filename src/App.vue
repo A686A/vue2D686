@@ -1,6 +1,12 @@
 <template>
   <div id="app">
-<Demo></Demo>
+  <!-- 声明路由链接 -->
+    <router-link to="/discover">发现音乐</router-link>
+    <router-link to="/my">我的音乐</router-link>
+    <router-link to="/friends">关注</router-link>
+    <router-link to="/demo">测试</router-link>
+   <!-- 声明路由占位标签 -->
+    <router-view></router-view>
   </div>
 </template>
 
