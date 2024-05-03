@@ -10,6 +10,7 @@ import axios from 'axios'
 import VueRouter from 'vue-router';
 import Vuex from 'vuex';
 import store from './store'
+import './mock'
 
 Vue.config.productionTip = false
 //将包挂载到vue的原型对象上

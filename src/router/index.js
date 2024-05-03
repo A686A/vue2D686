@@ -7,6 +7,7 @@ import My from '../components/My.vue'
 import TopList from '../components/TopList'
 import PlayList from '../components/PlayList'
 import Product from '../components/Product'
+import Mock from '../components/Mock'
 
 Vue.use(Router)
 
@@ -23,6 +24,7 @@ export default new Router({
     },
     { path: '/friends', component: Friends },
     { path: '/demo', component: Demo },
+    { path: '/mock', component: Mock },
     {
       path: '/my',
       component: My,

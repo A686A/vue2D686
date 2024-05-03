@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-  <!-- 声明路由链接 -->
+    <!-- 声明路由链接 -->
     <router-link to="/discover">发现音乐</router-link>
     <router-link to="/my">我的音乐</router-link>
     <router-link to="/friends">关注</router-link>
-    <router-link to="/demo">测试</router-link>
-   <!-- 声明路由占位标签 -->
+    <router-link to="/demo">ElementUi测试</router-link>
+    <router-link to="/mock">MockJs测试</router-link>
+    <!-- 声明路由占位标签 -->
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Demo from './components/Demo.vue'
 export default {
-  name: 'App',
-  components :{
-   Demo
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
