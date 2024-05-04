@@ -26,8 +26,9 @@
       :data="tableData.records"
       style="width: 100%"
       :row-class-name="tableRowClassName"
+      align="center"
     >
-      <el-table-column prop="id" label="编号" width="180"> </el-table-column>
+      <el-table-column prop="id" label="编号" sortable width="180"> </el-table-column>
       <el-table-column
         prop="username"
         label="姓名"
@@ -36,7 +37,7 @@
       <el-table-column prop="gender" label="姓别" width="180"></el-table-column>
       <el-table-column prop="birthday" label="生日" width="180">
       </el-table-column>
-      <el-table-column fixed="right" label="操作" width="100">
+      <el-table-column label="操作" width="100">
         <template slot-scope="scope">
           <el-button
             type="primary"
@@ -140,9 +141,9 @@ export default {
         });
     },
     tableRowClassName({ row, rowIndex }) {
-      if (rowIndex === 1) {
+      if (rowIndex% 2 === 1) {
         return "warning-row";
-      } else if (rowIndex % 3 === 1) {
+      } else if (rowIndex % 2 === 0) {
         return "success-row";
       }
       return "";
@@ -150,7 +151,7 @@ export default {
   },
   data() {
     return {
-      username: '',
+      username: "",
       current: 1,
       size: 8,
       dialogVisible: false,

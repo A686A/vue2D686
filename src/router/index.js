@@ -8,6 +8,7 @@ import TopList from '../components/TopList'
 import PlayList from '../components/PlayList'
 import Product from '../components/Product'
 import Mock from '../components/Mock'
+import Checktable from '../components/Checktable'
 
 Vue.use(Router)
 
@@ -25,6 +26,7 @@ export default new Router({
     { path: '/friends', component: Friends },
     { path: '/demo', component: Demo },
     { path: '/mock', component: Mock },
+    { path: '/checktable', component: Checktable },
     {
       path: '/my',
       component: My,

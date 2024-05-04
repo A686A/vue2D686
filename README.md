@@ -27,3 +27,14 @@ vue3-----vuex4
 
 mockjs
 npm install mockjs
+
+
+element-ui
+
+fixed="left"
+位于页面最左边或者最右边
+<el-table-column fixed="left" label="操作" width="100">
+
+sortable
+排序
+  <el-table-column prop="id" label="编号" sortable width="180"> </el-table-column>
