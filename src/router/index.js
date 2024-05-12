@@ -9,6 +9,7 @@ import PlayList from '../components/PlayList'
 import Product from '../components/Product'
 import Mock from '../components/Mock'
 import Checktable from '../components/Checktable'
+import Fileupload from '../components/Fileupload'
 
 Vue.use(Router)
 
@@ -26,6 +27,7 @@ export default new Router({
     { path: '/friends', component: Friends },
     { path: '/demo', component: Demo },
     { path: '/mock', component: Mock },
+    { path: '/fileupload', component: Fileupload },
     { path: '/checktable', component: Checktable },
     {
       path: '/my',

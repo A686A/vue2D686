@@ -7,6 +7,7 @@
     <router-link to="/demo">ElementUi测试</router-link>
     <router-link to="/mock">MockJs测试</router-link>
     <router-link to="/checktable">CheckTable测试</router-link>
+    <router-link to="/fileupload">文件上传</router-link>
     <!-- 声明路由占位标签 -->
     <router-view></router-view>
   </div>

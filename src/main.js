@@ -15,7 +15,7 @@ import './mock'
 Vue.config.productionTip = false
 //将包挂载到vue的原型对象上
 Vue.prototype.$axios = axios
-axios.defaults.baseURL = 'http://localhost:8080'
+// axios.defaults.baseURL = 'http://localhost:8080'
 
 Vue.use(VueRouter);
 Vue.use(ElementUI);
