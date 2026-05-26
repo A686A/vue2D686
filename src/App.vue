@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <!-- 声明路由链接 -->
     <router-link to="/discover">发现音乐</router-link>
     <router-link to="/my">我的音乐</router-link>
     <router-link to="/friends">关注</router-link>
@@ -8,7 +7,7 @@
     <router-link to="/mock">MockJs测试</router-link>
     <router-link to="/checktable">CheckTable测试</router-link>
     <router-link to="/fileupload">文件上传</router-link>
-    <!-- 声明路由占位标签 -->
+    <router-link to="/user-manage">用户管理</router-link>
     <router-view></router-view>
   </div>
 </template>
@@ -28,5 +27,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#app a {
+  margin: 0 8px;
 }
 </style>

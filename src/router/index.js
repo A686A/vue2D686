@@ -10,6 +10,7 @@ import Product from '../components/Product'
 import Mock from '../components/Mock'
 import Checktable from '../components/Checktable'
 import Fileupload from '../components/Fileupload'
+import UserManage from '../components/UserManage'
 
 Vue.use(Router)
 
@@ -29,6 +30,7 @@ export default new Router({
     { path: '/mock', component: Mock },
     { path: '/fileupload', component: Fileupload },
     { path: '/checktable', component: Checktable },
+    { path: '/user-manage', component: UserManage },
     {
       path: '/my',
       component: My,
